@@ -9,8 +9,8 @@
 /* banking page */
 .heading{
     text-align: center;
-    margin: 20px 0;
-    padding: 40px;
+    margin: 10px 0;
+    padding: 20px;
     font-size: 40px;
     font-weight: 500;
 }
@@ -90,7 +90,11 @@
 }
 .bx input::placeholder{
     font-size: 16px;
-    padding: 0 20px;
+    padding: 20px;
+}
+.bx input{
+    font-size: 18px;
+    padding: 20px;
 }
 
 /* log In page */
@@ -213,5 +217,33 @@
         padding: 40px;
         margin: 50px;
         background: rgb(255 255 255 / 70%);
+    }
+}
+
+@media (max-width: 650px){
+    .heading {
+        padding: 24px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .box {
+        flex-direction: column;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .input-button{
+        display: flex;
+        flex-direction: column;
+    }
+    .bx{
+        flex-direction:row;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .bx button {
+        margin-left: 10px;
     }
 }
