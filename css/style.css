@@ -5,18 +5,107 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-section{
+
+/* banking page */
+.heading{
+    text-align: center;
+    margin: 20px 0;
+    padding: 40px;
+    font-size: 40px;
+    font-weight: 500;
+}
+.money{
+    color: blue;
+}
+.all-section{
+    width: 80%;
+    margin: auto;
+}
+.main{
+    display: flex;
+    justify-content:space-between;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 33%;
+    height: auto;
+    padding: 20px;
+}
+.box-deposit {
+    background-color: #93C5FD;
+}
+.box-withdraw{
+    background-color: #86EFAC;
+}
+.box-balance{
+    background-color: #FDE047;
+}
+.box h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.box p{
+    font-size: 60px;
+    font-weight: 300;
+}
+.input-button{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px 0;
+}
+.bx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 49%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #8de0f5b0;
+}
+.bx input{
+    width: 60%;
+    height: 45px;
+    outline: none;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+.bx button{
+    padding: 15px 30px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background: #c92f14;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+
+}
+.bx input::placeholder{
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+/* log In page */
+.section-two{
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
 }
-section .imgBox{
+.section-two .imgBox{
     position: relative;
     width: 50%;
     height: 100%;
 }
-section .imgBox:before{
+.section-two .imgBox:before{
     content: '';
     position: absolute;
     width: 100%;
@@ -25,7 +114,7 @@ section .imgBox:before{
     z-index: 1;
     mix-blend-mode: screen;
 }
-section .imgBox img{
+.section-two .imgBox img{
     position: absolute;
     top: 0;
     left: 0;
@@ -33,17 +122,17 @@ section .imgBox img{
     height: 100%;
     object-fit: cover;
 }
-section .contentBox {
+.section-two .contentBox {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
     height: 100%;
 }
-section .contentBox .formBx{
+.section-two .contentBox .formBx{
     width: 50%;
 }
-section .contentBox .formBx h2{
+.section-two .contentBox .formBx h2{
     color: #607d8b;
     font-weight: 600;
     font-size: 1.5rem;
@@ -53,10 +142,10 @@ section .contentBox .formBx h2{
     display: inline-block;
     letter-spacing: 1px;
 }
-section .contentBox .formBx .inputBx{
+.section-two .contentBox .formBx .inputBx{
     margin-bottom: 20px;
 }
-section .contentBox .formBx .inputBx span{
+.section-two .contentBox .formBx .inputBx span{
     font-size: 16px;
     margin-bottom: 5px;
     display: inline-block;
@@ -64,7 +153,7 @@ section .contentBox .formBx .inputBx span{
     font-weight: 300;
     letter-spacing: 1px;
 }
-section .contentBox .formBx .inputBx input, button{
+.section-two .contentBox .formBx .inputBx input, #login-btn{
     width: 100%;
     padding: 10px 20px;
     outline: none;
@@ -77,7 +166,7 @@ section .contentBox .formBx .inputBx input, button{
     border-radius: 30px;
 
 }
-section .contentBox .formBx .inputBx button{
+.section-two .contentBox .formBx .inputBx #login-btn{
     background-color: #ff4584;
     color: #fff;
     outline: none;
@@ -85,33 +174,33 @@ section .contentBox .formBx .inputBx button{
     font-weight: 500;
     cursor: pointer;
 }
-section .contentBox .formBx .inputBx button:hover{
+.section-two .contentBox .formBx .inputBx #login-btn:hover{
     background: #f53677;
 }
-section .contentBox .formBx .remember{
+.section-two .contentBox .formBx .remember{
     margin-bottom: 10px;
     color: #607d8b;
     font-weight: 400;
     font-size: 14px;
 }
-section .contentBox .formBx .inputBx p{
+.section-two .contentBox .formBx .inputBx p{
     color: #607d8b;
     /* display: inline-block; */
 }
-section .contentBox .formBx .inputBx p a{
+.section-two .contentBox .formBx .inputBx p a{
     color: #ff4584;
     /* display: inline-block; */
 }
 
 @media (max-width: 768px){
-    section .imgBox {
+    .section-two .imgBox {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
     }
-    section .contentBox {
+    .section-two .contentBox {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -119,7 +208,7 @@ section .contentBox .formBx .inputBx p a{
         height: 100%;
         z-index: 1;
     }
-    section .contentBox .formBx {
+    .section-two .contentBox .formBx {
         width: 100%;
         padding: 40px;
         margin: 50px;
