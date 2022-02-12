@@ -247,3 +247,28 @@
         margin-left: 10px;
     }
 }
+@media (max-width: 500px){
+    
+    .bx button {
+        padding: 8px 9px;
+    }
+    .bx input::placeholder{
+        font-size: 12px;
+        padding: 5px;
+    }
+    .bx input {
+        padding: 0;
+    }
+   
+    .bx{
+        flex-direction:row;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .box p {
+        font-size: 30px; 
+        font-weight: 300;
+    }
+
+
+}
